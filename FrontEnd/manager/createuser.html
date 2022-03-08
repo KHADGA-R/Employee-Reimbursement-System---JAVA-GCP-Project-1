@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="eng-US">
+    <head>
+        <title>User Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="createuser.css">
+       
+    </head>
+    <div id="main">
+    <body>
+      <header class="header">
+        <h2>Expenses Reimbursement System</h2>
+      </header>
+     
+      <div class="topnav">
+        <a class="active" href="home.html" target="_parent">Home</a>
+        <a href="#circular">Circular</a>
+        <a href="#department">Department</a>
+        <a href="#resource">Resources</a>
+          <div class="topnav-right">
+            <a href="#search">Search</a>
+            <a href="login.html" target="_parent">Login</a>
+            <a href="createuser.html">Create User</a>
+            <a href="#logout">Logout</a>         
+          </div>
+      </div>  
+      
+
+          <div id="id02" class="createuser" data-closable>
+            
+            <form id="form">
+              <div class="container">
+                <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Login">&times;</span>
+                <h2>User Registration Form</h2>
+                <p>Please fill the form to create an user.</p>
+                <hr>
+            
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" maxlength="50" required onkeypress="printPressed(event)"/>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required onkeydown="passwordPressed(event)"/>
+            
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fname" id="fname" required onkeydown="fnamePressed(event)"/>
+
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required onkeydown="lnamePressed(event)"/>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required onkeydown="emailPressed(event)"/>
+
+                <label for="userrole"><b>Select User Role</b></label>
+                <select id="userrole" name="userrole">
+                    <option value="1">Employee</option >
+                    <option value="2">Manager</option >
+                </select>
+
+                <hr>
+                  <div class="clearfix">
+                  <button type="submit" class="registerbtn">Register</button>
+                  </div>
+                
+              </div>
+              
+            </form>
+          </div>
+
+        <div id="user-container">
+
+        </div>
+
+        <script src="createuser.js"></script>
+
+    </body>
+</html>

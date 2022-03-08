@@ -1,0 +1,1 @@
+2022-02-10 15:45:35 INFO  LoggingSingleton:23 - New Reimbursement task created: Reimbursement{id=1, amount=10.0, submitted=2022-02-04 00:00:00.0, resolved=2022-02-05 00:00:00.0, author=3, resolver=4, statusId=5, typeId=0}

@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="eng-US">
+    <head>
+        <title>User Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+       
+    </head>
+    <div id="main">
+    <body>
+
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#circular">Circular</a>
+        <a href="#department">Department</a>
+        <a href="#resource">Resources</a>
+          <div class="topnav-right">
+            <a href="#search">Search</a>
+            <a href="login.html">Login</a>
+            <a href="#create">Create User</a>
+            <a href="#logout">Logout</a>         
+        </div>
+      </div>
+
+            <form id="form">
+              <div class="container">
+                <h2>User Registration Form</h2>
+                <p>Please fill the form to create an user.</p>
+                <hr>
+            
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" maxlength="50" required onkeypress="printPressed(event)"/>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required onkeydown="passwordPressed(event)"/>
+            
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fname" id="fname" required onkeydown="fnamePressed(event)"/>
+
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required onkeydown="lnamePressed(event)"/>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required onkeydown="emailPressed(event)"/>
+
+                <label for="userrole"><b>Select User Role</b></label>
+                <select id="userrole" name="userrole">
+                    <option value="employee">Employee</option >
+                    <option value="manager">Manager</option >
+                </select>
+
+                <hr>
+                  <div class="clearfix">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="registerbtn">Register</button>
+                  </div>
+                </div>
+              </div>
+              
+            </form>
+        </div>
+
+        <div id="user-container">
+
+        </div>
+
+        <script src="event.js"></script>
+
+    </body>
+</html>

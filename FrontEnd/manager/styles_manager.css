@@ -1,0 +1,204 @@
+
+* {box-sizing: border-box}
+
+
+.header {
+  background-color: rgb(235, 231, 231);
+  padding: 30px;
+  text-align: right;
+  font-size: 22px;
+  color:black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: slateblue;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+
+.topnav a.active {
+  background-color: #0704aa;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  margin-top:0%;
+  margin-bottom: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.button {
+  background-color: slateblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 0px 0;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  opacity: 0.9;
+}
+
+.submit {
+  background-color: slateblue;
+  color: white;
+  padding: 5px 10px;
+  margin: 0px 0;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  opacity: 0.9;
+}
+
+.update-reimb {
+  align-items: center;
+  margin-right: 150px;
+  position:relative;
+}
+
+.button:hover {
+  opacity:1;
+}
+
+/*extra styles for cancel button*/
+
+.submitbtn {
+  padding: 14px 20px;
+  background-color: slateblue;
+  color: #ddd;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/*Float cancel and registration buttons and add an equal width*/
+.cancelbtn, .submitbtn {
+  float: left;
+  width: 20%;
+}
+
+/*Clear floats*/
+.clearfix::after {
+  content:"";
+  clear:both;
+  display: table;
+}
+
+/* The Close Button (x) */
+.close {
+  position: relative;
+  left: 100%;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #c41919;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.table {
+  width:90%;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+ 
+ 
+  
+}
+
+.table thead th {
+  background-color: rgb(235, 229, 228);
+  color: black;
+  padding: 10px 20px;
+}
+
+.table td, th {
+  width:250px;
+  padding-left: 5px;
+  padding-right:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: small;
+}
+
+.table tbody tr:nth-child(even) {
+  background: rgba(226, 232, 236, 0.933);
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 1px solid #5896d1;
+}
+
+
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}

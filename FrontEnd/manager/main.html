@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="eng-US">
+    <head>
+        <title>User Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+       
+    </head>
+    <div id="main">
+    <body>
+      <header class="header">
+        <h2>Expenses Reimbursement System</h2>
+      </header>
+     
+      <div class="topnav">
+        <a class="active" href="home.html" target="_parent">Home</a>
+        <a href="managerindex.html" target="_parent">View All</a>
+        <a href="viewpending.html" target="_parent">View Pending</a>
+        <a href="viewresolved.html" target="_parent">View Resolved</a>
+        <a href="manager-viewemployees.html" target="_parent">Employees List</a>
+          <div class="topnav-right">
+            <a href="#search">Search</a>
+            <a href="login.html" target="_parent">Login</a>
+            <a href="createuser.html">Create User</a>
+            <a href="#logout">Logout</a>         
+          </div>
+      </div>    
+    </div>
+            <div>
+              <table class="table" >
+                <thead id="thead" value="userList">User List</thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+        <div id="user-container">
+
+        </div>
+     
+        <script src="event.js"></script>
+
+        
+    </body>
+</html>

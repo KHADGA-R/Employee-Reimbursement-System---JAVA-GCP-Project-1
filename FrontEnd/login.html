@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+    </head>
+
+    <body>
+       <form class="login-content" id="form" >
+            <div class="container" id="id01">
+              <h1>Login</h1> 
+              <p>Please fill username and password.</p>
+              <hr>
+              <div id="login-err-msg-holder" style="display:none">
+                <p id="login-err-msg">
+                  Invalid username and/or password
+                </p>
+              </div>
+
+              <label for="username"><b>Username</b></label>
+              <input id="username" type="text" placeholder="Username" name="username" required/>
+        
+              <label for="password"><b>Password</b></label>
+              <input id="password" type="password" placeholder="Enter Password" name="password" required/>
+                    
+              <div class="clearfix">
+                <button type="submit" class="loginbtn">Login</button>
+              </div>
+            </div>
+          </form>
+        <script src="login.js"></script>
+    </body>
+</html>
